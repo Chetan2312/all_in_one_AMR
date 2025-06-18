@@ -18,6 +18,5 @@
 
 # **Software Stack:**
     1. Ubuntu Jellyfish 22.04
-    2. Humble ROS2 installation:
-        [ROS2 Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+    2. Humble ROS2
     3. 
