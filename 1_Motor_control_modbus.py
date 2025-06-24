@@ -3,7 +3,7 @@ import time
 
 # === Modbus Configuration ===
 client = ModbusSerialClient(
-    port='/dev/ttyUSB0',
+    port='/dev/ttyUSB1',
     baudrate=9600,
     bytesize=8,
     stopbits=1,
@@ -50,7 +50,7 @@ def main():
         print("❌ Failed to connect to RMCS-3001")
         return
 
-    print("✅ Connected to RMCS-3001 via /dev/ttyUSB0")
+    print("✅ Connected to RMCS-3001 via /dev/ttyUSB1")
 
     while True:
         command_menu()
@@ -59,7 +59,7 @@ def main():
         if choice == "1":
             write_register(6, 40, "Set Frequency (Hz)")
         elif choice == "2":
-            write_register(4, 4800, "Set PWM Output")
+            write_register(4, 1000, "Set PWM Output")
         elif choice == "3":
             write_register(2, 513, "Enable CW (Mode 1)")
         elif choice == "4":
